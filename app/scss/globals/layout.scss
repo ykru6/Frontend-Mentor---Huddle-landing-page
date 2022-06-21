@@ -1,0 +1,41 @@
+@use '../util' as *;
+
+.wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	
+	margin: 0 auto;
+
+	@include breakpoint-down(small) {
+		background: clr(primary, violet) url("/app/asset/images/bg-mobile.svg") left top / 100% auto no-repeat;
+	}
+
+	@include breakpoint(medium) {
+		background: clr(primary, violet) url("/app/asset/images/bg-desktop.svg") left top/auto 100% no-repeat;
+
+		padding: 2.75rem 4rem;
+	}
+}
+
+.content {
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 1 1 auto;
+	
+	@include breakpoint(medium) {
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+}
+
+.footer {
+	font-family: 'Poppins';
+	font-weight: 400;
+
+	display: flex;
+	flex-flow: row nowrap;
+	
+	margin-top: 3rem;
+	
+	
+}

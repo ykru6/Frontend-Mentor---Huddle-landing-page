@@ -1,0 +1,36 @@
+@use '../util/functions.scss' as *;
+@use '../globals/colors.scss' as *;
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	height: 100vh;
+
+	margin: 0;
+	padding: 2.25rem;
+	
+	color: white;
+}
+
+footer {
+	.footer__attribution { 
+		font-size: 1rem; 
+		text-align: center; 
+	
+		a { 
+			color: rgb(255, 238, 0); 
+		}
+	}
+}
+
+
+
